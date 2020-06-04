@@ -9,20 +9,12 @@ import Controleur.*;
 
 import Modele.Grille;
 
-/**
- * Une classe pour représenter la zone contenant le bouton.
- *
- * Cette zone n'aura pas à être mise à jour et ne sera donc pas un observateur.
- * En revanche, comme la zone précédente, celle-ci est un panneau [JPanel].
- */
+
 class VueCommandes extends JPanel {
-    /**
-     * Pour que le bouton puisse transmettre ses ordres, on garde une
-     * référence au modèle.
-     */
+    
     private Grille modele;
 
-    /** Constructeur. */
+    
     public VueCommandes(Grille modele) {
 		this.modele = modele;
 		
